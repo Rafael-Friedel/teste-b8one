@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# Avaliação B8one
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Visão Geral
 
-Currently, two official plugins are available:
+Este é um desafio proposto como parte do Processo de Seleção da B8one. Ele consiste em replicar o design de uma vitrine de E-commerce fictício. <br><br>
+Live: https://teste-b8one-mocha.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- TypeScript
+- TailwindCSS
+- CVA (Class Variance Authority)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Rodando localmente
 
-- Configure the top-level `parserOptions` property like this:
+Clone o projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+  git clone git@github.com:Rafael-Friedel/teste-b8one.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Entre no diretório do projeto
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+  cd teste-b8one
 ```
+
+Instale as dependências
+
+```bash
+  npm i
+```
+
+ou
+
+```bash
+  yarn
+```
+
+Inicie o servidor
+
+```bash
+  npm run dev
+```
+
+ou
+
+```bash
+  yarn dev
+```
+
+## Sobre
+
+Sou desenvolvedor desde 2021, trabalhando com as tecnologias React e VTEX IO. Tenho formação FullStack pela Trybe, formado em Java, e atualmente estou cursando graduação Ánalise e Desenvolvimento de Software pela Estácio, para ter uma visão macro sobre desenvolvimento. Dentre as empresas que pude contribuir, destaco:
+
+- [Liritty](https://www.liritty.com.br)
+- [Creamy](https://www.creamy.com.br)
+- [Yeanzah](https://www.yeanzah.com.br)
+- [Shopvinho](https://www.shopvinho.com.br)
+- [Shopluxo](https://www.shopluxo.com.br)
