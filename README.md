@@ -61,6 +61,6 @@ Sou desenvolvedor desde 2021, trabalhando com as tecnologias React e VTEX IO. Te
 
 - [Liritty](https://www.liritty.com.br)
 - [Creamy](https://www.creamy.com.br)
-- [Yeanzah](https://www.yeanzah.com.br)
+- [Yenzah](https://www.yenzah.com.br)
 - [Shopvinho](https://www.shopvinho.com.br)
 - [Shopluxo](https://www.shopluxo.com.br)
