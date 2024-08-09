@@ -1,7 +1,7 @@
 import { VariantProps, cva, cx } from 'class-variance-authority';
 import React from "react";
 
-const wishlistStyles = cva('w-12 h-12 flex items-center justify-center rounded-full', {
+const wishlistStyles = cva('w-12 h-12 flex items-center justify-center rounded-full transition-all duration-150 ease-linear', {
   variants: {
     selected: {
       true: "bg-red-500 hover:bg-red-600 [&_path]:fill-white [&_path]:stroke-white",
