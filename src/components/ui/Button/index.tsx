@@ -2,7 +2,7 @@ import { VariantProps, cva, cx } from 'class-variance-authority';
 import React from "react";
 import checkIcon from "../../../assets/check.svg";
 
-const buttonStyles = cva('py-3 px-6 rounded-[5px] justify-center flex gap-3 uppercase font-bold text-base tracking-[-0.08px] w-full', {
+const buttonStyles = cva('py-3 px-6 rounded-[5px] justify-center flex gap-3 uppercase font-bold text-base tracking-[-0.08px] w-full transition-all duration-150 ease-linear', {
   variants: {
     selected: {
       true: "text-gray-900 bg-green-100",
@@ -14,10 +14,11 @@ const buttonStyles = cva('py-3 px-6 rounded-[5px] justify-center flex gap-3 uppe
 interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement>,
   VariantProps<typeof buttonStyles> {
   text: string
+  textSelected: string
   selected: boolean
 }
 
-const Button: React.FC<IButton> = ({ text, selected, ...props }) => {
+const Button: React.FC<IButton> = ({ text, selected, textSelected, ...props }) => {
   return (
     <button className={cx(buttonStyles({ selected }))} {...props}>
       {selected && (
@@ -29,7 +30,7 @@ const Button: React.FC<IButton> = ({ text, selected, ...props }) => {
           loading="lazy"
         />
       )}
-      <span>{text}</span>
+      <span>{selected ? textSelected : text}</span>
     </button>
   )
 }
