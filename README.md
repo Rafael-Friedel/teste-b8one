@@ -5,6 +5,10 @@
 Este é um desafio proposto como parte do Processo de Seleção da B8one. Ele consiste em replicar o design de uma vitrine de E-commerce fictício. <br><br>
 Live: https://teste-b8one-mocha.vercel.app/
 
+## Figma Proposto
+
+- [Link Figma](https://www.figma.com/design/I0f8AKykrUVpUdrJTJSCRk/teste-dev-frontend?node-id=1-2&t=Ce8wyM066NExHJYC-0)
+
 ## Tech Stack
 
 - React
